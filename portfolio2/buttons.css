@@ -1,0 +1,135 @@
+.header-button {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-right: 70px;
+  box-shadow: 5px 5px 5px dimgray;
+}
+
+.header-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.header-button:hover::after {
+  transform: scale(4);
+}
+
+.header-button:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+.header-flag-emoji{
+    width: 20px;
+    height: 20px;
+}
+
+/* --------------- */
+.header-button-last {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+
+  font-weight: bold;
+
+  box-shadow: 5px 5px 5px dimgray;
+}
+
+.header-button-last::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.header-button-last:hover::after {
+  transform: scale(4);
+}
+
+.header-button-last:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+/* ------------ */
+.main-project-button {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  margin-left: 160px;
+  margin-right: 70px;
+  box-shadow: 5px 5px 5px dimgray;
+}
+
+.main-project-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.main-project-button:hover::after {
+  transform: scale(4);
+}
+
+.main-project-button:hover {
+  border-color: #666666;
+  background: #292929;
+}

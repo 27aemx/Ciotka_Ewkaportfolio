@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciotka_Ewka Portfolio</title>
+    <link rel="icon" type="image/png" href="ZDJECIA/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <section class="index-header">
+            <h1 class="header-nick">~ Ciotka_Ewka Portfolio ~</h1>
+            <button class="header-button" onclick="showPL()">Roblox</button>
+            <button class="header-button">C# .NET</button>
+            <a href="https://discord.gg/mJ2zxCPjsZ" target="_blank"><button class="header-button" style="margin-right: 450px;">Discord</button></a>
+            <button class="header-button" onclick="PL()"><img src="ZDJECIA/flagPL.png" alt="flaga-polski" class="header-flag-emoji"></button>
+            <button class="header-button-last" onclick="ENG()"><img src="ZDJECIA/flagUK.png" alt="flaga-wielkiejbrytani" class="header-flag-emoji"></button>
+        </section>
+        <div class="header-line"></div>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="main-avatar">
+                <img src="ZDJECIA/skinNowy.png" alt="mój-avatar" class="avatar-image">
+            </div>
+            <div class="main-div-desc">
+                <h1 class="main-aboutme" id="aboutme">O Mnie:</h1>
+                <p id="main-desc">Cześć! Nazywam się Kuba i od 7 lat tworzę w Roblox jako Ciotka_Ewka. Jestem współwłaścicielem i lead developerem Project Łódzkie, gdzie zajmuję się budowaniem i rozwojem gry. Od 3 lat ucze się programowania i znam sporo języków. Na tej stronie znajdziesz moje projekty z C# .NET i Roblox Studio.</p>
+                <button class="main-project-button" onclick="projectsScroll()" id="projectsbutton">Zobacz moje projekty...</button>
+            </div>
+        </section>
+        <section class="main-projects">
+            <div class="main-projectlodzkie" id="pl-main" onclick="showPL()">
+                <img src="ZDJECIA/projectlodzkielogo.png" alt="logo-project-lodzkie" class="lodzkie-image" width="600px" height="270px">
+                <h1 class="pl-name">Project:Łódzkie</h1>
+                <p id="pl-desc">Projekt skupia się na stworzeniu realistycznej mapy inspirowanej polską infrastrukturą drogową oraz architekturą miejską. Gracze mają możliwość swobodnego poruszania się pojazdami, eksplorowania świata oraz uczestniczenia w roleplay.</p>
+            </div>
+                <div class="main-csharp">
+                <img src="ZDJECIA/dotnet-logo.png" alt="logo-dotnet" class="lodzkie-image" width="600px" height="270px">
+                <h1 class="cs-name">C# .NET</h1>
+                <p id="cs-desc">Sekcja C# .NET przedstawia moje projekty tworzone w oparciu o technologię C# oraz platformę Microsoft .NET. Skupiam się na rozwijaniu umiejętności programowania poprzez tworzenie praktycznych aplikacji z interfejsem graficznym.</p>
+            </div>
+        </section>
+        <section class="copyright" id="copy"><p>Strona stworzona przez Ciotka_Ewka&copy;</p></section>
+    </main>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

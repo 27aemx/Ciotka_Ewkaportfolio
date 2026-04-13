@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Łódzkie</title>
+  <link rel="icon" type="image/png" href="ZDJECIA/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="galerie.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="slider">
+    <button class="header-button" onclick="prev()">&lt;</button>
+    <div class="image-box">
+      <img id="photo" />
+    </div>
+    <button class="header-button" onclick="next()">&gt;</button>
+  </div>
+
+  <script>
+    const images = [
+      "PROJECTLODZKIE/KFC1.png",
+      "PROJECTLODZKIE/KFC2.png",
+      "PROJECTLODZKIE/KFC3.png",
+      "PROJECTLODZKIE/MOP1.png",
+      "PROJECTLODZKIE/MOP2.png",
+      "PROJECTLODZKIE/MOP3.png",
+      "PROJECTLODZKIE/s8.png",
+      "PROJECTLODZKIE/majster.png",
+      "PROJECTLODZKIE/majster2.png",
+      "PROJECTLODZKIE/ptaszkowice.png",
+      "PROJECTLODZKIE/jelno.png",
+      "PROJECTLODZKIE/jelno2.png",
+      "PROJECTLODZKIE/podule.png",
+      "PROJECTLODZKIE/podule2.png",
+      "PROJECTLODZKIE/podule3.png",
+      "PROJECTLODZKIE/podule4.png",
+      "PROJECTLODZKIE/podule5.png",
+      "PROJECTLODZKIE/podule6.png",
+      "PROJECTLODZKIE/domek.png"
+    ]
+
+    let index = 0
+    const photo = document.getElementById("photo")
+
+    function showImage() {
+      photo.src = images[index]
+    }
+    function next() {
+      index = (index + 1) % images.length;
+      showImage()
+    }
+    function prev() {
+      index = (index - 1 + images.length) % images.length;
+      showImage()
+    }
+    showImage()
+  </script>
+
+</body>
+</html>

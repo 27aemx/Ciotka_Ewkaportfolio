@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+.header-line{
+    background-color:rgb(88, 88, 88);
+    width: 100%;
+    height: 1px;
+}
+
+.index-header{
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-nick{
+    margin-left: 60px;
+    margin-right: 17%;
+    font-weight: bold;
+}
+
+.main-section{
+    margin: 0px;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.avatar-image{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.main-avatar{
+    width: 700px;
+    height: 700px;
+    border-radius: 40px;
+    background-color: rgb(29, 27, 27);
+    box-shadow: 30px 30px 20px dimgray;
+}
+
+.main-div-desc{
+    width: 700px;
+    height: 700px;
+    border-radius: 40px;
+    margin-left: 70px;
+    margin-top: 170px;
+}
+
+.main-aboutme{
+    font-weight: bolder;
+    font-size: 300%;
+}
+
+#main-desc{
+    font-size: 200%;
+}
+
+.main-projects{
+    margin: 0px;
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.main-projectlodzkie{
+    border-radius: 20px;
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border: 1px solid #3b3a3a;
+    transition: all 0.2s ease;
+    position: relative;
+    background-image: url("ZDJECIA/bcimagepl.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-image: none;
+}
+
+.main-projectlodzkie:hover{
+    transform: scale(1.02);
+}
+
+.main-projectlodzkie:hover::before {
+    filter: blur(70px);
+}
+
+.main-projectlodzkie::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("ZDJECIA/bcimagepl.png");
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+    z-index: 1;
+}
+
+.main-projectlodzkie * {
+    position: relative;
+    z-index: 2;
+}
+
+#pl-desc{
+    font-size: 120%;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+.pl-name{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 250%;
+    margin-top: 400px;
+    margin-right: 350px;
+}
+
+
+/* -------------------------------------- */
+
+.main-csharp{
+    border-radius: 20px;
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border: 1px solid #3b3a3a;
+    transition: all 0.2s ease;
+    position: relative;
+    background-image: url("ZDJECIA/bcimagecs.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-image: none;
+    margin-left: 50px;
+}
+
+.main-csharp:hover{
+    transform: scale(1.02);
+}
+
+.main-csharp:hover::before {
+    filter: blur(70px);
+}
+
+.main-csharp::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("ZDJECIA/bcimagecs.png");
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+    z-index: 1;
+}
+
+.main-csharp * {
+    position: relative;
+    z-index: 2;
+}
+
+#cs-desc{
+    font-size: 120%;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+.cs-name{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 250%;
+    margin-top: 400px;
+    margin-right: 350px;
+}
+
+.copyright{
+    font-size: 80%;
+}
